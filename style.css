@@ -1,61 +1,126 @@
 *{
     outline: 1px dotted black;
-    padding: 5px;
-
-
 }
 
 
 div.container{
-    border: 3px solid red;
-    width: 780px;
+    width: 970px;
     min-height: 500px;
-    background-color: aquamarine;
+    background-color: #265074;
+
 }
 
-
+/* Header styling */
     div.container div.header{
-        border: 3px solid orange;
         min-height: 50px;
         
-
-
     }
+        div.container div.header img{
+            width: 300px;
+        }
 
 
+/* Nav styling */
     div.container div.nav{
-        border: 3px solid yellow;
-        width: 200px;
-        height: 300px;
-        display: inline-block;
-
+        height: 70px;
+        display: flex;
+        align-items: center;
+        
     }
+        div.container div.nav ul{
+            width: 970px;
+            height: 50px;
+            display: flex;
+            color: white;
+            border-radius: 10px;
+            background-color: #4a7faa;
+            justify-content: space-evenly;
+            list-style: none;
+            align-items: center;
+        
+        }
 
-
+/* Main styling */
     div.container div.main{
-        border: 3px solid green;
-        width: 544px;
         min-height: 300px;
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
         vertical-align: top;
-
+        justify-content: space-around;
+        padding: opx;
 
     }
         
 
-        div.container div.main div.box{
-            border: 3px solid blue;
-            width: 200px;
+        div.container div.main div.sec1{
             min-height: 50px;
-            display:inline-block;
+            display:flex;
             text-align: center;
+            justify-content: space-around;
 
 
         }
+        div.container div.main div.sec1 p{
+            color: white;
+            display: flex;
+            justify-content: space-around;
+        }
+        div.container div.main div.sec1 li{
+            color: white;
+            white-space: nowrap;
+        }
+        div.container div.main div.sec1 div.box1{
+                min-height: 50px;
+                display:flex;
+                text-align: center;
+                width: 25%;
+            }
+            div.container div.main div.sec1 div.box2{
+                min-height: 50px;
+                display:flex;
+                text-align: center;
+                flex-direction: column;
+                width: 50%;
+            }
 
+        div.container div.main div.sec2{
+            min-height: 50px;
+            display:flex;
+            text-align: center;
+            justify-content: space-around;
+            background-color: white;
+            align-items: center;
+        }
+            div.container div.main div.sec2 div.box1{
+                min-height: 50px;
+                width: 45%;
+                display:flex;
+                text-align: center;
+                flex-direction: column;
+            }
+            div.container div.main div.sec2 div.box2{
+                min-height: 50px;
+                width: 45%;
+                display:flex;
+                text-align: center;
+                flex-direction: column;
+            }
     
+    
+    /* Footer styling */
     div.container div.footer{
-        border: 3px solid orange;
+        display: flex;
         min-height: 50px;
-
+        justify-content: space-around;
     }
+        div.container div.footer ul{
+            list-style-type: none;
+            display: inline-flex;
+            
+
+        }
+        div.container div.footer li{
+        padding: 10px 50px;
+        color: white;
+
+        }
