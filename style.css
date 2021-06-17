@@ -1,44 +1,59 @@
-*{
+/* *{
     outline: 1px dotted black;
 }
-
+ */
 
 div.container{
     width: 970px;
     min-height: 500px;
     background-color: #265074;
+    padding: 10px;
 
 }
 
 /* Header styling */
     div.container div.header{
         min-height: 50px;
-        
+        display: flex;
+        justify-content: space-between;
     }
         div.container div.header img{
             width: 300px;
         }
+        div.container div.header div.example input[type=text] {
 
+        font-size: 17px;
+        border: 1px solid grey;
+        background: #f1f1f1;
+        }
+        div.container div.header div.example  button {
+        padding: 10px;
+        background: #2196F3;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        }
 
 /* Nav styling */
     div.container div.nav{
         height: 70px;
         display: flex;
         align-items: center;
-        
+        justify-content: center;   
     }
         div.container div.nav ul{
-            width: 970px;
+            width: 830px;
             height: 50px;
             display: flex;
             color: white;
             border-radius: 10px;
             background-color: #4a7faa;
-            justify-content: space-evenly;
+            justify-content: space-around;
             list-style: none;
             align-items: center;
-        
         }
+
 
 /* Main styling */
     div.container div.main{
@@ -47,33 +62,43 @@ div.container{
         flex-direction: column;
         vertical-align: top;
         justify-content: space-around;
-        padding: opx;
-
     }
-        
 
+
+
+        /* Styling for first section of the main container */
         div.container div.main div.sec1{
-            min-height: 50px;
             display:flex;
             text-align: center;
             justify-content: space-around;
-
-
         }
         div.container div.main div.sec1 p{
             color: white;
             display: flex;
             justify-content: space-around;
+            font-size: 12px;
         }
         div.container div.main div.sec1 li{
-            color: white;
+            color: gold;
             white-space: nowrap;
+            padding: 0px;
+            font-size: 20px;
+            list-style-type: none;
+            justify-content: center;
+        }
+        div.container div.main div.sec1 ul{
+            
+            padding: 0px;
         }
         div.container div.main div.sec1 div.box1{
                 min-height: 50px;
                 display:flex;
                 text-align: center;
                 width: 25%;
+                justify-content: space-around;   
+            }
+            div.container div.main div.sec1 div.box1 a{
+                color: white;
             }
             div.container div.main div.sec1 div.box2{
                 min-height: 50px;
@@ -81,46 +106,56 @@ div.container{
                 text-align: center;
                 flex-direction: column;
                 width: 50%;
+                justify-content: space-between;
             }
 
+
+        /* Styling for second section of the main container */
         div.container div.main div.sec2{
             min-height: 50px;
             display:flex;
             text-align: center;
             justify-content: space-around;
             background-color: white;
-            align-items: center;
+            align-items: top;     
         }
             div.container div.main div.sec2 div.box1{
                 min-height: 50px;
                 width: 45%;
-                display:flex;
                 text-align: center;
-                flex-direction: column;
             }
             div.container div.main div.sec2 div.box2{
                 min-height: 50px;
                 width: 45%;
-                display:flex;
                 text-align: center;
-                flex-direction: column;
             }
-    
+            div.container div.main div.sec2 h3{
+                border-top:5px solid #4a7faa;
+            }
+            div.container div.main div.sec2 p ul{
+            text-align: center;
+            margin: 0px;
+            }
     
     /* Footer styling */
     div.container div.footer{
+        height: 100px;
         display: flex;
-        min-height: 50px;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        vertical-align: middle;
         justify-content: space-around;
     }
         div.container div.footer ul{
+            
             list-style-type: none;
             display: inline-flex;
-            
-
         }
         div.container div.footer li{
-        padding: 10px 50px;
-        color: white;
+        padding: 0px 50px;
 
+        }
+        div.container div.footer p{
+            font-size: 10px;
         }
